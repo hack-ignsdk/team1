@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tahun').html((new Date).getFullYear());
+
+			var d = new Date();
+			var strDate = d.getDate() + " - " + (d.getMonth()+1) + " - " + d.getFullYear();
+
+			$('#tanggal').html(strDate);
+		});
+	</script>
+	<style type="text/css">
+		body{
+			width: 21cm;
+    		min-height: 29.7cm;
+    		height: 29.7cm;
+		}
+
+		#header{
+			min-height: 130px;
+			border-bottom: solid 5px #000;
+		}
+
+		#header img{
+			width:2.5cm;
+			float:left;
+		}
+
+		#judul{
+			text-align: center;
+			padding-top: 15px;
+		}
+
+		#judul_atas{
+			font-size: 20px;
+		}
+
+		#judul_tengah{
+			font-size: 30px;
+		}
+
+		#judul_bawah{
+			font-size: 25px;
+		}
+
+		#judul_konten{
+			text-align: center;
+			font-size: 25px;
+			margin-top: 10px;
+		}
+
+		#nomor_surat{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		#kepala, #mahasiswa{
+			padding-left: 30px;
+			margin-bottom: 20px;
+		}
+
+		#konten{
+			padding-left: 2cm;
+			padding-right: 2cm;
+		}
+
+		#tanda_tangan{
+			float: right;
+			width: 8cm;
+			margin-top: 40px;
+		}
+
+		#tanda_tangan img{
+			height: 80px;
+			margin-left: 100px;
+		}
+
+		#nama_kota{
+			text-align: center;
+		}
+
+		#nama_kepala_perpus{
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		#penandatangan{
+			text-align: center;
+		}
+
+		label{
+			width:60px;
+			display: block;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<img src="images/logo.jpg">
+		<div id="judul">
+			<div id="judul_atas">KEMENTRIAN PENDIDIKAN DAN KEBUDAYAAN</div>
+			<div id="judul_tengah">UNIVERSITAS ANDALAS</div>
+			<div id="judul_bawah">PERPUSTAKAAN PUSAT</div>
+		</div>
+	</div>
+	<div id="konten">
+		<div id="judul_konten">SURAT KERETANGAN BEBAS PUSTAKA</div>
+		<div id="nomor_surat">Nomor : ......../......../<span id="tahun"></span></div>
+		Yang bertanda tangan di bawah ini :<br>
+		<div id="kepala">
+			<label>Nama</label>: <span>Namama</span><br>
+			<label>NIP</label>: <span>0237402734</span><br>
+			<label>Jabatan</label>: <span>adjhajksdhas</span>
+		</div>
+		Dengan ini menerangkan bahwa : <br>
+		<div id="mahasiswa">
+			<label>Nama</label>: <span>Namama</span><br>
+			<label>NIM</label>: <span>0237402734</span><br>
+			<label>Prodi</label>: <span>adjhajksdhas</span>
+		</div>
+		Adalah anggota |library_name|, yang telah menyelesaikan hak dan kewajibannya terhadap perpustakaan. Yang bersangkutan telah mengembalikan semua peminjaman buku dan koleksi bahan perpustakaan lainnya serta telah menyelesaikan segala urusan yang berkaitan dengan |library_name|. <br><br>
+		Demikian surat keterangan ini dibuat untuk dapat dipergunakan sebagaimana mestinya. 
+
+		<div id="tanda_tangan">
+			<div id="nama_kota">
+				Yogyakarta, <span id="tanggal"></span><br>
+				Kepala Perpustakaan |library_name|
+			</div>
+				<img src="images/ttd.jpg">
+			<div id="penandatangan">
+				<span id="nama_kepala_perpus">Nama Kepala perpus</span><br>
+				NIP. <span id="nip_kepala">97887688567</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
