@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=SI Bebas Pustaka
+Exec=/usr/bin/ignsdk -p /opt/ignsdk/SI.ign
+Icon=/opt/ignsdk/SI.ign/icons/app.png
+Terminal=false
+Type=Application
+Categories=Education
