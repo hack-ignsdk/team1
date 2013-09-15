@@ -19,6 +19,7 @@ $(document).ready(function(){
 	$('#cari').click(function(){
 		nim = $('#nim').val();
 		$('#nim_user').html(nim);
+		$('#nim_user_hijau').html(nim);
 		$('label').css('margin-top', '10%');
 		//$('#pesan_merah').fadeIn(300);
 		
@@ -38,7 +39,7 @@ $(document).ready(function(){
 
 	$('#tombol_cetak').click(function(){
 		var currentYear = (new Date).getFullYear();
-		window.location.href = 'http://192.168.0.111/latihan/ignsdk_json_interface.php?nim=01231';
+		ign.exec('firefox http://192.168.0.111/latihan/ignsdk_data_surat_bebas.php?nim='+nim);
 	});
 
 });
